@@ -1,13 +1,26 @@
 .logo {
   font-family: "Raleway", sans-serif;
   font-weight: 700;
-  @include font(26px, 31px);
+  @include font(24px, 28px);
   color: var(--accent-color);
+  @media screen and (min-width: 1200px) {
+    @include font(26px, 31px);
+  }
 }
 .logo_verticals-paddings {
   display: block;
-  padding-top: 24px;
-  padding-bottom: 24px;
+  padding-top: 16px;
+  padding-bottom: 15px;
+
+  @media screen and (min-width: 768px) {
+    padding-top: 26px;
+    padding-bottom: 25px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    padding-top: 24px;
+    padding-bottom: 24px;
+  }
 }
 .logo_margin-bottom {
   display: inline-block;

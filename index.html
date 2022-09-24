@@ -36,6 +36,11 @@
                     </li>
                 </ul>
             </nav>
+            <button type="button" class="burger-menu" data-menu-open>
+                <svg class="burger-menu__icon">
+                    <use href="./images/icons.svg#icon-burger"></use>
+                </svg>
+            </button>
             <ul class="list page-header__contacts-list">
                 <li class="page-header__contacts-item">
                     <a class="link page-header__contacts-link" href="mailto:info@devstudio.com">
@@ -54,6 +59,52 @@
                     </a>
                 </li>
             </ul>
+        </div>
+        <div class="mobile-menu" data-menu>
+            <div class="container mobile-menu__container">
+                <button type="button" class="mobile-menu__burger-close" data-menu-close>
+                    <svg class="mobile-menu__icon">
+                        <use href="./images/icons.svg#icon-close"></use>
+                    </svg>
+                </button>
+                <ul class="mobile-menu__nav list">
+                    <li class="mobile-menu__item">
+                        <a href="" class="mobile-menu__link link mobile-menu__link_active">Студія</a>
+                    </li>
+                    <li class="mobile-menu__item">
+                        <a href="" class="mobile-menu__link link">Портфоліо</a>
+                    </li>
+                    <li class="mobile-menu__item">
+                        <a href="" class="mobile-menu__link link">Контакти</a>
+                    </li>
+                </ul>
+
+                <div class="mobile-menu__wrapper">
+                    <ul class="mobile-menu__contacts list">
+                        <li class="mobile-menu__contacts-item">
+                            <a href="" class="mobile-menu__phone link">+38 096 111 11 11</a>
+                        </li>
+                        <li class="mobile-menu__contacts-item">
+                            <a href="" class="mobile-menu__mail link">info@devstudio.com</a>
+                        </li>
+                    </ul>
+
+                    <ul class="mobile-menu__social list">
+                        <li class="mobile-menu__social-item">
+                            <a href="" class="mobile-menu__social-link link">Instagram</a>
+                        </li>
+                        <li class="mobile-menu__social-item">
+                            <a href="" class="mobile-menu__social-link link">Twitter</a>
+                        </li>
+                        <li class="mobile-menu__social-item">
+                            <a href="" class="mobile-menu__social-link link">Facebook</a>
+                        </li>
+                        <li class="mobile-menu__social-item">
+                            <a href="" class="mobile-menu__social-link link">LinkedIn</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
         </div>
     </header>
 
