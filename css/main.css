@@ -286,6 +286,16 @@ img {
   font-size: 34px;
   color: var(--accent-color);
 }
+@media screen and (max-width: 344px) {
+  .mobile-menu__phone {
+    font-size: 30px;
+  }
+}
+@media screen and (max-width: 327px) {
+  .mobile-menu__phone {
+    font-size: 24px;
+  }
+}
 
 .mobile-menu__mail {
   font-size: 24px;
