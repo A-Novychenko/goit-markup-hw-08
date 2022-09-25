@@ -1,34 +1,5 @@
-.site-nav__list {
-  display: flex;
-  margin-left: 93px;
-
-  @media screen and (max-width: 767px) {
-    display: none;
-  }
-}
-
-.page-header__contacts-list {
-  display: flex;
-  margin-left: auto;
-
-  @media screen and (max-width: 767px) {
-    display: none;
-  }
-}
-
-.burger-menu {
-  border: none;
-  background-color: transparent;
-  padding: 0;
-  line-height: 0;
-  @media screen and (min-width: 768px) {
-    display: none;
-  }
-}
-
-.burger-menu__icon {
-  width: 40px;
-  height: 40px;
+.page-header {
+  border-bottom: 1px solid #ececec;
 }
 
 .page-header__wrapper {
@@ -37,15 +8,24 @@
   justify-content: space-between;
 }
 
-.page-header {
-  border-bottom: 1px solid #ececec;
-}
-
-// ----------------------------------------------
-
 .site-nav {
   display: flex;
   align-items: center;
+}
+
+.site-nav__list {
+  display: flex;
+
+  @media screen and (max-width: 767px) {
+    display: none;
+  }
+
+  @media screen and (min-width: 768px) {
+    margin-left: 87px;
+  }
+  @media screen and (min-width: 1200px) {
+    margin-left: 93px;
+  }
 }
 
 .site-nav__item {
@@ -58,7 +38,7 @@
   position: relative;
   display: block;
   padding-top: 32px;
-  padding-bottom: 32px;
+  padding-bottom: 31px;
   color: var(--primary-color);
   font-weight: 500;
   line-height: 1.14;
@@ -84,21 +64,49 @@
   }
 }
 
+.page-header__contacts-list {
+  @media screen and (max-width: 767px) {
+    display: none;
+  }
+  @media screen and (min-width: 768px) {
+    display: flex;
+    flex-direction: column;
+    margin-left: auto;
+  }
+  @media screen and (min-width: 1200px) {
+    flex-direction: row;
+  }
+}
+
+.page-header__contacts-item {
+  &:not(:last-child) {
+    @media screen and (min-width: 768px) {
+      margin-bottom: 10px;
+    }
+    @media screen and (min-width: 1200px) {
+      margin-bottom: 0;
+      margin-right: 50px;
+    }
+  }
+}
+
 .page-header__contacts-link {
   display: flex;
   align-items: center;
-  padding-top: 32px;
-  padding-bottom: 32px;
 
   color: var(--secondary-color);
   font-weight: 500;
   line-height: 1.14;
   letter-spacing: 0.02em;
-}
 
-.page-header__contacts-item {
-  &:not(:last-child) {
-    margin-right: 50px;
+  @media screen and (min-width: 768px) {
+    font-size: 12px;
+  }
+  @media screen and (min-width: 1200px) {
+    padding-top: 32px;
+    padding-bottom: 31px;
+
+    font-size: 14px;
   }
 }
 
