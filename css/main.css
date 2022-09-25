@@ -159,6 +159,11 @@ img {
 .btn_wide:active {
   background-color: var(--btn-bgc-accent);
 }
+@media screen and (max-width: 767px) {
+  .btn_wide {
+    min-width: 200px;
+  }
+}
 
 .btn_current {
   padding: 6px 25px;
@@ -760,6 +765,7 @@ img {
 }
 
 .hero {
+  max-width: 480px;
   height: 400px;
   margin-right: auto;
   margin-left: auto;
@@ -779,6 +785,7 @@ img {
 }
 @media screen and (min-width: 768px) {
   .hero {
+    max-width: 768px;
     background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/hero-bg/hero-bg-tablet.jpg");
   }
 }
@@ -789,6 +796,10 @@ img {
 }
 @media screen and (min-width: 1200px) {
   .hero {
+    max-width: 1600px;
+    height: 600px;
+    padding-top: 200px;
+    padding-bottom: 200px;
     background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/hero-bg/hero-bg-desktop.jpg");
   }
 }
@@ -808,18 +819,17 @@ img {
   line-height: 1.6153846154;
   letter-spacing: 0.06em;
   text-transform: uppercase;
-  text-align: center;
 }
 @media screen and (min-width: 768px) {
   .hero__title {
-    width: 400px;
+    max-width: 400px;
     font-size: 26px;
     line-height: 1.6153846154;
   }
 }
 @media screen and (min-width: 1200px) {
   .hero__title {
-    width: 696px;
+    max-width: 696px;
     font-size: 44px;
     line-height: 1.3636363636;
   }
