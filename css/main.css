@@ -415,6 +415,7 @@ img {
   height: 100%;
   padding: 93px 15px 94px;
   overflow-y: scroll;
+  overflow-x: hidden;
   background: rgba(0, 0, 0, 0.2);
   transform: scale(1);
   visibility: visible;
