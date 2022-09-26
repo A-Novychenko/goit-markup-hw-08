@@ -1186,6 +1186,20 @@ img {
   }
 }
 
+.footer__inner {
+  display: flex;
+}
+@media screen and (max-width: 767px) {
+  .footer__inner {
+    flex-direction: column;
+  }
+}
+@media screen and (min-width: 767px) and (max-width: 1199px) {
+  .footer__inner {
+    column-gap: 165px;
+  }
+}
+
 .page-footer__address-box {
   margin-bottom: 60px;
 }
