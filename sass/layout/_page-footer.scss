@@ -3,15 +3,31 @@
   padding-bottom: 60px;
 
   background-color: var(--bgc-footer);
+
+  text-align: center;
+
+  @media screen and (min-width: 1200px) {
+    text-align: left;
+  }
 }
 
 .page-footer__wrapper {
   display: flex;
-  align-items: baseline;
+  flex-direction: column;
+  align-items: center;
+
+  @media screen and (min-width: 1200px) {
+    flex-direction: row;
+    align-items: baseline;
+  }
 }
 
 .page-footer__address-box {
-  width: 231px;
+  margin-bottom: 60px;
+  @media screen and (min-width: 1200px) {
+    width: 231px;
+    margin-bottom: 0;
+  }
 }
 
 .page-footer__address {
@@ -20,17 +36,21 @@
 
 .page-footer__item {
   &:not(:last-child) {
-    margin-bottom: 9px;
+    margin-bottom: 8px;
+    @media screen and (min-width: 1200px) {
+      margin-bottom: 9px;
+    }
   }
 }
 
 .page-footer__link {
   color: var(--white-color);
+  line-height: 1.5;
 }
 
 .page-footer__link_white {
   color: var(--white-transparent-color);
-  line-height: 1.71;
+  line-height: 1.5;
 
   transition: color var(--animation);
 
@@ -51,9 +71,79 @@
 }
 
 .page-footer__social-box {
-  margin-left: 70px;
+  margin-bottom: 60px;
+  @media screen and (min-width: 1200px) {
+    margin-bottom: 0;
+    margin-left: 70px;
+  }
 }
 
 .page-footer__form-box {
-  margin-left: auto;
+  width: 100%;
+  @media screen and (min-width: 1200px) {
+    margin-left: auto;
+    width: auto;
+  }
 }
+
+// 88888888888888888888888888888888888888888888888888888888888888
+
+// .page-footer {
+//   padding-top: 60px;
+//   padding-bottom: 60px;
+
+//   background-color: var(--bgc-footer);
+// }
+
+// .page-footer__wrapper {
+//   display: flex;
+//   align-items: baseline;
+// }
+
+// .page-footer__address-box {
+//   width: 231px;
+// }
+
+// .page-footer__address {
+//   font-style: normal;
+// }
+
+// .page-footer__item {
+//   &:not(:last-child) {
+//     margin-bottom: 9px;
+//   }
+// }
+
+// .page-footer__link {
+//   color: var(--white-color);
+// }
+
+// .page-footer__link_white {
+//   color: var(--white-transparent-color);
+//   line-height: 1.71;
+
+//   transition: color var(--animation);
+
+//   &:hover,
+//   &:focus {
+//     color: var(--accent-color);
+//   }
+// }
+
+// .page-footer__text {
+//   display: block;
+//   margin-bottom: 20px;
+//   font-size: inherit;
+//   font-weight: 700;
+//   line-height: 1.14;
+//   text-transform: uppercase;
+//   color: var(--white-color);
+// }
+
+// .page-footer__social-box {
+//   margin-left: 70px;
+// }
+
+// .page-footer__form-box {
+//   margin-left: auto;
+// }
