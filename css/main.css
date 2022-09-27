@@ -985,6 +985,10 @@ img {
   position: relative;
 }
 
+.work__img {
+  width: 370px;
+}
+
 .work__text {
   position: absolute;
   left: 0;
