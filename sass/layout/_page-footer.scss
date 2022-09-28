@@ -26,8 +26,12 @@
   @media screen and (max-width: 767px) {
     flex-direction: column;
   }
-  @media screen and (min-width: 767px) and (max-width: 1199px) {
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
     column-gap: 165px;
+    align-items: baseline;
+  }
+  @media screen and (min-width: 1200px) {
+    align-items: baseline;
   }
 }
 
