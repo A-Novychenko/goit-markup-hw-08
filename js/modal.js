@@ -7,16 +7,30 @@
 
   refs.openModalBtn.addEventListener("click", toggleModal);
   refs.closeModalBtn.addEventListener("click", toggleModal);
-  refs.modal.addEventListener("click", closeBackdrop);
+  refs.modal.addEventListener("click", clickBackdropCloseModal);
 
   function toggleModal() {
+    window.addEventListener("keydown", keyPressEscCloseModal);
     document.body.classList.toggle("modal-open");
     refs.modal.classList.toggle("is-hidden");
+
+    if (refs.modal.classList.contains("is-hidden")) {
+      window.removeEventListener("keydown", keyPressEscCloseModal);
+    }
   }
 
-  function closeBackdrop(e) {
+  function clickBackdropCloseModal(e) {
     if (e.target === e.currentTarget) {
       toggleModal();
+    }
+  }
+
+  function keyPressEscCloseModal(e) {
+    console.log(e.currentTarget);
+    if (e.code === `Escape`) {
+      window.removeEventListener("keydown", keyPressEscCloseModal);
+      document.body.classList.toggle("modal-open");
+      refs.modal.classList.toggle("is-hidden");
     }
   }
 })();
