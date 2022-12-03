@@ -26,8 +26,9 @@
   }
 
   function keyPressEscCloseModal(e) {
-    console.log(e.currentTarget);
-    if (e.code === `Escape`) {
+    const ESC_KEY_CODE = `Escape`;
+
+    if (e.code === ESC_KEY_CODE) {
       window.removeEventListener("keydown", keyPressEscCloseModal);
       document.body.classList.toggle("modal-open");
       refs.modal.classList.toggle("is-hidden");
